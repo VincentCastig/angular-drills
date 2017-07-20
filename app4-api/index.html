@@ -1,6 +1,13 @@
 <html ng-app="apiApp">
-	<body>
-		
+	<body ng-controller='myCtrl'>
+		<div ng-repeat="item in planet">
+
+			Name: {{item.name}}<br>
+			Rotation Period: {{item.rotation_period}}<br>
+			Climate: {{item.climate}}<br>
+			Gravity: {{item.gravity}}<br><hr>
+
+		</div>
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
