@@ -10,4 +10,9 @@ angular.module('myApp').service('myService', function($http){
       return "error"
     })
 }
+
+  this.addPlanet = function(obj){
+    return $http.post('/api/planets', obj)
+
+  }
 })
