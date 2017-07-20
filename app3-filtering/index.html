@@ -1,6 +1,13 @@
-<html>
-	<body>
-		Something
+<html ng-app="myApp">
+	<body ng-controller="myCtrl">
+		<input type="text" placeholder="Place Holder" ng-model="filterArr">
+		<ul ng-repeat="items in arr | filter:filterArr">
+			<li>{{items.name}}</li>
+			<li>{{items.email}}</li>
+			<li>{{items.phone}}</li>
+			<li>{{items.dateEmployed}}</li>
+		</ul>
+
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
