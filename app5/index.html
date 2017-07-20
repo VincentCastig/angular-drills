@@ -1,6 +1,12 @@
-<html>
-	<body>
-		Something
+<html ng-app='myApp'>
+	<body ng-controller='myCtrl'>
+		<input type="text" name="" value="" ng-model="filterPlanet">
+		<div ng-repeat="planet in planets | filter: filterPlanet">
+			Name: {{planet.name}}<br>
+			Gravity: {{planet.gravity}}<br>
+			Climate: {{planet.climate}}<br>
+			Rotation Period: {{planet.rotation_period}}<hr>
+		</div>
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
