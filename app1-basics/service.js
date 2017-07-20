@@ -1,3 +1,3 @@
-angular.module('myApp').service('service', function($http){
+angular.module('myApp').service('myService', function($http){
   this.test = "hey";
 })

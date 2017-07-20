@@ -1,4 +1,4 @@
-angular.module('myApp').controller('myCtrl', function($scope, service){
-  $scope.test = service.test
+angular.module('myApp').controller('myCtrl', function($scope, myService){
+  $scope.test = myService.test
 
 })
