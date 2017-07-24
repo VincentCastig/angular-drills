@@ -1,9 +1,9 @@
 <html ng-app='myApp'>
 	<body ng-controller='myCtrl'>
-		<input type="text" name="" value="" ng-model="stars.name">
-		<input type="text" name="" value="" ng-model="stars.gravity">
-		<input type="text" name="" value="" ng-model="stars.climate">
-		<button type="button" name="button" ng-click="addPlanet(stars)">Add Planet</button>
+		<input type="text" name="" value="" ng-model="star.name">
+		<input type="text" name="" value="" ng-model="star.gravity">
+		<input type="text" name="" value="" ng-model="star.climate">
+		<button type="button" name="button" ng-click="addPlanet(star)">Add Planet</button>
 		<div ng-repeat="planet in planets | filter: filterPlanet">
 			Name: {{planet.name}}<br>
 			Gravity: {{planet.gravity}}<br>

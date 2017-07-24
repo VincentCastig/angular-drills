@@ -12,7 +12,12 @@ angular.module('myApp').service('myService', function($http){
 }
 
   this.addPlanet = function(obj){
-    return $http.post('/api/planets', obj)
+    return $http({
+      method: "POST",
+      url: 'www.swapi.co/api/planets',
+      data: {star:obj}
+  })
+}
 
-  }
-})
+
+  })
